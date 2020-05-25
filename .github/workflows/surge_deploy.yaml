@@ -1,26 +1,20 @@
-name: 'Deploy Surge'
+name: Deploy Website
 
-on:
-  push:
-    branches:
-    - master
+on: [push]
 
 jobs:
-  deploy:
-    name: 'Deploy'
+  build:
     runs-on: ubuntu-latest
-
+    name: Deploying to surge
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Make Directory
-        run: mkdir build
-      - name: Build the website
-        run: cp index.html ./build/
-      - name: Deploy Surge
-        uses: yg/deploy-surge@v1.0.1
+      - uses: actions/checkout@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v2-beta
         with:
-          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-          DOMAIN_NAME: ${{ secrets.DOMAIN_NAME }}
-          BUILD_DIRECTORY: ${{ secrets.BUILD_DIRECTORY }}
+          node-version: 12
+      - name: Install Surge
+        run: npm install -g surge
+      - name: Run surge
+        run: surge ./ ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+
           
