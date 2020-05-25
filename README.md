@@ -50,7 +50,7 @@ https://help.github.com/en/actions/configuring-and-managing-workflows/configurin
 
 15. open website in browser
 
-bootcamp_setup_ziakhan.surge.sh
+http://bootcamp_setup_ziakhan.surge.sh/
 
 16. Submit your github repo URL here:
 
