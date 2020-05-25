@@ -16,7 +16,7 @@ jobs:
       - name: Build the website
         run: <commands_to_build_the_site_and_store_the_output_in_'./build'>
       - name: Deploy Surge
-        uses: yg/deploy-surge@v1.0.0
+        uses: yg/deploy-surge@v1.0.1
         with:
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
           
