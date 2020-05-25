@@ -1,5 +1,6 @@
 # Bootcamp 2020 Class 1: Setup Web App Development Environment
 
+I took the following steps, all bootcampers should also this on there own repos
 
 1. Signup on GitHub.com and Install GitHub Desktop on your computer
 
@@ -21,33 +22,37 @@ https://nodejs.org/en/download/
 
 npm install --global surge
 
-7. Generate Surge token by the following command and save it in the repo secrets
+7. Generate Surge token by the following command 
 
 surge token
 
-5. Watch Introduction to GitHub Actions
+8. Save the surge token in the repo's GitHubs secrets
+
+9. Watch Introduction to GitHub Actions
 
 https://www.youtube.com/watch?v=eB0nUzAI7M8
 
-6. Learn YAML
+10. Learn YAML
 
 https://rollout.io/blog/yaml-tutorial-everything-you-need-get-started/
 
-7. Configuring a Github Actions Workflow
+11. Configuring a Github Actions Workflow
 
 https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions
 
 https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow
 
-8. Learn and copy surge deployment action file in root of your repo in .github/workflow directory
+12. Learn and create surge deployment action file in root of your repo in .github/workflow directory like I have done
 
-9. Make small change in your index.html, commit it and push it again to github.com
+13. Make small change in your index.html, commit it and push it again to github.com
 
-10. Check the action tab to GitHub website and see if the action executed
+14. Check the action tab to GitHub website and see if the action executed
 
-11. open website in browser
+15. open website in browser
 
-https://bootcamp_setup_website.surge.sh
+bootcamp_setup_ziakhan.surge.sh
+
+16. Submit your github repo URL here:
 
 
 
