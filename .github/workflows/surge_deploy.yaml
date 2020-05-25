@@ -16,7 +16,7 @@ jobs:
       - name: Make Directory
         run: mkdir build
       - name: Build the website
-        run: cp ./* ./build/
+        run: cp index.html ./build/
       - name: Deploy Surge
         uses: yg/deploy-surge@v1.0.1
         with:
