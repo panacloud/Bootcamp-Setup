@@ -1,6 +1,6 @@
-# Bootcamp 2020 Class 1: Setup Web App Development Environment
+# Bootcamp 2020 Class 1: Setup Website Development Environment
 
-I took the following steps, all bootcampers should also this on there own repos
+I took the following steps, all bootcampers should also do this on there own repos
 
 1. Signup on GitHub.com and Install GitHub Desktop on your computer
 
