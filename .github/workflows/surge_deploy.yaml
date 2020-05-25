@@ -1,16 +1,22 @@
-name: My workflow
+name: 'Deploy Surge'
 
-on: push
+on:
+  push:
+    branches:
+    - master
 
 jobs:
-  my-job:
-    name: My job
+  deploy:
+    name: 'Deploy'
     runs-on: ubuntu-latest
+
     steps:
-      - name: Deploy to foo-bar.surge.sh
-        uses: dswistowski/surge-sh-action@v1
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Build the website
+        run: <commands_to_build_the_site_and_store_the_output_in_'./build'>
+      - name: Deploy Surge
+        uses: yg/deploy-surge@v1.0.0
         with:
-          domain: 'zia-khan-website.surge.sh'
-          project: '.'
-          login: ziaukhan@hotmail.com
-          token: ${{ secrets.surge_token }}
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+          
