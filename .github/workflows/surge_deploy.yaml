@@ -11,6 +11,7 @@ jobs:
       - name: Install surge and fire deployment
         uses: actions/setup-node@v1
         with:
-          node-version: 8
+          node-version: 12.16.3
       - run: npm install -g surge
-      - run: surge ./ bootcamp_stepup_website --token ${{ secrets.SURGE_TOKEN }}
+      - run: surge ./ bootcamp_setup_website --token ${{ secrets.SURGE_TOKEN }}
+  

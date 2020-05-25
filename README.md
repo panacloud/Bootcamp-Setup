@@ -1,4 +1,4 @@
-# Bootcamp 2020: Setup Web App Development Environment
+# Bootcamp 2020 Class 1: Setup Web App Development Environment
 
 
 1. Signup on GitHub.com and Install GitHub Desktop on your computer
@@ -26,18 +26,28 @@ npm install --global surge
 surge token
 
 5. Watch Introduction to GitHub Actions
+
 https://www.youtube.com/watch?v=eB0nUzAI7M8
 
 6. Learn YAML
+
 https://rollout.io/blog/yaml-tutorial-everything-you-need-get-started/
 
 7. Configuring a Github Actions Workflow
+
 https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions
+
 https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow
 
 8. Learn and copy surge deployment action file in root of your repo in .github/workflow directory
 
 9. Make small change in your index.html, commit it and push it again to github.com
+
+10. Check the action tab to GitHub website and see if the action executed
+
+11. open website in browser
+
+https://bootcamp_setup_website.surge.sh
 
 
 
