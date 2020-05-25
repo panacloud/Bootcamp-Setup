@@ -52,7 +52,9 @@ https://help.github.com/en/actions/configuring-and-managing-workflows/configurin
 
 http://bootcamp_setup_ziakhan.surge.sh/
 
-16. Submit your github repo URL here:
+16. Submit your github repo URL here in the issues of the assignment repo, like I have done here:
+
+https://github.com/panacloud/Bootcamp-Setup/issues/1
 
 
 
